@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        form {
+            background-color: #Fff;
+            width: 500px;
+            margin: 60px auto;
+            height: 500px;
+            border-radius: 14px;
+            box-shadow: -1px 0px 150px -0px rgb(171, 171, 171);
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            padding: 60px;
+        }
+
+        .two-columns{
+            display: flex;
+        }
+
+        label{
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        input{
+            margin-top: 10px;
+            border: transparent;
+            border-bottom: 2px solid #0000005c;
+            margin-right: 50px;
+            outline: none;
+            padding: 5px;
+            width: 180px;
+        }
+
+        input:focus,
+        textarea:focus{
+            border-bottom: 2px solid #000;
+            outline: none;
+        }
+
+        .coment{
+            display: flex;
+            flex-flow: column;
+        }
+
+        textarea{
+            margin-top: 20px;
+            resize: none;
+            height: 150px;
+            border: none;
+            border-bottom: 2px solid #0000005c;
+            width: auto;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            color: #fff;
+            background-color: #0000006b;
+            padding: 5px 30px;
+            border: none;
+            border-radius: 20px;
+            transition: all 0.69s;
+            cursor: pointer;
+            width: 130px;
+            height: 40px;
+            font-size: 19px;
+        }
+
+        button:hover{
+            background-color: #000;
+        } 
+        
+        @media screen and (max-width: 844px){
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form>
+        
+        <div class="two-columns">
+            <div class="deals">
+                <label for="text">Nombre</label>
+                <input placeholder="Sebastian" type="text" id="nombre" autocomplete="off" name="nombre">
+            </div>
+
+            <div class="deals">
+                <label for="text">Apellido</label>
+                <input placeholder="Gutierrez" type="text" id="apellido" autocomplete="off" name="apellido">
+            </div>
+        </div>
+
+        <div class="two-columns">
+            <div class="deals">
+                <label for="mail">Correo</label>
+                <input placeholder="example@dominio.com" type="mail" id="correo" autocomplete="off" name="correo">
+            </div>
+
+            <div class="deals">
+                <label for="string">Numero</label>
+                <input placeholder="903461322" type="string" id="numero" autocomplete="off" name="numero">
+            </div>
+        </div>
+
+        <div class="coment">
+            <label for="coment">Comentarios</label>
+            <textarea placeholder=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos odit iusto sequi harum, illum blanditiis ut cumque. Ab, officia tempora minima aperiam magnam alias ea harum, dolore nesciunt, sint ipsum!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos odit iusto sequi harum, illum blanditiis ut cumque. Ab, officia tempora minima aperiam magnam alias ea harum, dolore nesciunt, sint ipsum. . . . "></textarea>
+        </div>
+
+        <div class="btn">
+            <button>Enviar</button>
+        </div>
+        
+    </form>
+</body>
+
+</html>
